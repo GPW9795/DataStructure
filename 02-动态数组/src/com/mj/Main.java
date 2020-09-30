@@ -6,7 +6,7 @@ public class Main {
         int[] array = {11, 22, 33};
 
         // new是向对堆空间申请内存
-        ArrayList list = new ArrayList();
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(99);
         list.add(88);
         list.add(77);
@@ -22,6 +22,7 @@ public class Main {
 
         list.set(3,30);
 //        Assert.test(list.get(3) == 30);
+
 
     }
 
