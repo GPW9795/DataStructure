@@ -21,10 +21,9 @@ public class Main {
         }
         int first = 0;
         int second = 1;
-        for (int i = 0; i < n - 1; i++) {
-            int sum = first + second;
-            first = second;
-            second = sum;
+        while (n-- > 1) {
+            second += first;
+            first = second - first;
         }
         return second;
     }
