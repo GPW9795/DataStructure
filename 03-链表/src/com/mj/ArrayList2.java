@@ -1,6 +1,11 @@
 package com.mj;
 
-public class ArrayList<E> extends AbstractList<E> {
+/**
+ * 有动态缩容的操作
+ *
+ * @param <E>
+ */
+public class ArrayList2<E> extends AbstractList<E> {
 
     /**
      * 所有元素
@@ -9,11 +14,11 @@ public class ArrayList<E> extends AbstractList<E> {
 
     private static final int DEFAULT_CAPACITY = 10;
 
-    public ArrayList() {
+    public ArrayList2() {
         this(DEFAULT_CAPACITY);
     }
 
-    public ArrayList(int capacity) {
+    public ArrayList2(int capacity) {
         capacity = (capacity < DEFAULT_CAPACITY) ? DEFAULT_CAPACITY : capacity;
         elements = (E[]) new Object[capacity];
     }
@@ -62,10 +67,6 @@ public class ArrayList<E> extends AbstractList<E> {
             elements[i] = null;
         }
         size = 0;
-        // 适当缩容
-        if (elements != null && elements.length > DEFAULT_CAPACITY) {
-            elements = (E[]) new Object[DEFAULT_CAPACITY];
-        }
     }
 
 
@@ -103,11 +104,26 @@ public class ArrayList<E> extends AbstractList<E> {
             elements[i - 1] = elements[i];
         }
         elements[--size] = null;
+        trim();
         return old;
     }
 
     public void remove(E element) {
         remove(indexOf(element));
+    }
+
+    private void trim() {
+        int capacity = elements.length;
+        int newCapacity = capacity >> 1;
+        if (size >= newCapacity || capacity <= DEFAULT_CAPACITY) {
+            return;
+        }
+        E[] newElements = (E[]) new Object[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newElements[i] = elements[i];
+        }
+        elements = newElements;
+        System.out.println(capacity + "缩容: " + newCapacity);
     }
 
     private void ensureCapacity(int capacity) {
@@ -123,5 +139,6 @@ public class ArrayList<E> extends AbstractList<E> {
         }
         // 旧的数组指向新的数组
         elements = newElements;
+        System.out.println(oldCapacity + "扩容: " + newCapacity);
     }
 }

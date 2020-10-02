@@ -3,12 +3,66 @@ package com.mj;
 public class LinkedList<E> extends AbstractList<E> {
 
     private Node<E> first;
+    private Node<E> last;
 
+    private class Node<E> {
+        E element;
+        Node<E> next;
+        Node<E> prev;
+
+        // 构造函数
+        public Node(Node<E> prev, E element, Node<E> next) {
+            this.prev = prev;
+            this.element = element;
+            this.next = next;
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            if (prev != null) {
+                sb.append(prev.element);
+            } else {
+                sb.append("null");
+            }
+            sb.append("<-").append(element).append("->");
+            if (next != null) {
+                sb.append(next.element);
+            } else {
+                sb.append("null");
+            }
+            return sb.toString();
+        }
+    }
+
+    /**
+     * 获取index对应节点对象
+     *
+     * @param index
+     * @return
+     */
+    private Node<E> node(int index) {
+        rangeCheck(index);
+        if (index < (size >> 1)) {
+            Node<E> node = first;
+            for (int i = 0; i < index; i++) {
+                node = node.next;
+            }
+            return node;
+        } else {
+            Node<E> node = last;
+            for (int i = size - 1; i > index; i--) {
+                node = node.prev;
+            }
+            return node;
+        }
+    }
 
     @Override
     public void clear() {
-        first = null;
         size = 0;
+        first = null;
+        last = null;
     }
 
     @Override
@@ -27,11 +81,24 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public void add(int index, E element) {
         rangeCheckForAdd(index);
-        if (index == 0) {
-            first = new Node<>(element, first);
+        if (index == size) { // 往最后面添加元素
+            Node<E> oldLast = last;
+            last = new Node<>(oldLast, element, null);
+            if (oldLast == null) { // 链表添加的第一个元素
+                first = last;
+            } else {
+                oldLast.next = last;
+            }
         } else {
-            Node<E> prev = node(index - 1);
-            prev.next = new Node<>(element, prev.next);
+            Node<E> next = node(index);
+            Node<E> prev = next.prev;
+            Node<E> node = new Node<>(prev, element, next);
+            next.prev = node;
+            if (prev == null) { // index == 0
+                first = node;
+            } else {
+                prev.next = node;
+            }
         }
         size++;
     }
@@ -39,17 +106,25 @@ public class LinkedList<E> extends AbstractList<E> {
     @Override
     public E remove(int index) {
         rangeCheck(index);
-        Node<E> old = first;
-        if (index == 0){
-            first = old.next;
+
+        Node<E> node = node(index);
+        Node<E> prev = node.prev;
+        Node<E> next = node.next;
+
+        // 删除的是第一个节点, index == 0
+        if (prev == null) {
+            first = next;
+        } else {
+            prev.next = next;
         }
-        else{
-            Node<E> prev = node(index-1);
-            old = prev.next;
-            prev.next = old.next;
+        // 删除的是最后一个节点, index == size - 1
+        if (next == null) {
+            last = prev;
+        } else {
+            next.prev = prev;
         }
         size--;
-        return old.element;
+        return node.element;
     }
 
     @Override
@@ -83,37 +158,12 @@ public class LinkedList<E> extends AbstractList<E> {
             if (i != 0) {
                 string.append(", ");
             }
-            string.append(node.element);
+            string.append(node);
             node = node.next;
         }
         string.append("]");
         return string.toString();
     }
 
-    /**
-     * 获取index对应节点对象
-     *
-     * @param index
-     * @return
-     */
-    private Node<E> node(int index) {
-        rangeCheck(index);
-        Node<E> node = first;
-        for (int i = 0; i < index; i++) {
-            node = node.next;
-        }
-        return node;
-    }
-
-    private class Node<E> {
-        E element;
-        Node<E> next;
-
-        // 构造函数
-        public Node(E elementE, Node<E> next) {
-            this.element = elementE;
-            this.next = next;
-        }
-    }
 }
 
