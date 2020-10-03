@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="527556ba-7dfe-4c38-97e7-53037783a84c" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mj/Deque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/circle/CircleDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/circle/CircleQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mj/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00-Leetcode/src/队列/_225_用队列实现栈.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-Leetcode/src/队列/_225_用队列实现栈.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
