@@ -27,4 +27,8 @@ public class Stack<E> {
         return list.get(list.size() - 1);
     }
 
+    public void clear(){
+        list.clear();
+    }
+
 }
