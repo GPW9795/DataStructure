@@ -3,7 +3,7 @@ package com.mj;
 import com.mj.list.LinkedList;
 import com.mj.list.List;
 
-public class Queue<E> {
+public class Deque<E> {
     private List<E> list = new LinkedList<>();
 
     public int size() {
@@ -14,16 +14,27 @@ public class Queue<E> {
         return list.isEmpty();
     }
 
-    public void enQueue(E element) {
+    public void enQueueRear(E element) {
         list.add(element);
     }
 
-    public E deQueue() {
+    public void enQueueFront(E element) {
+        list.add(0, element);
+    }
+
+    public E deQueueFront() {
         return list.remove(0);
+    }
+
+    public E deQueueRear() {
+        return list.remove(list.size() - 1);
     }
 
     public E front() {
         return list.get(0);
     }
 
+    public E rear() {
+        return list.get(list.size() - 1);
+    }
 }

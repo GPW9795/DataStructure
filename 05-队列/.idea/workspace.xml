@@ -20,22 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="527556ba-7dfe-4c38-97e7-53037783a84c" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/../00-leetcode/src/栈/_150_逆波兰表达式求值.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../00-leetcode/src/栈/_224_基本计算器.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../00-leetcode/src/栈/_856_括号的分数.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../00-leetcode/src/队列/_232_用栈实现队列.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-队列.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/list/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/list/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/list/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04-栈/src/com/mj/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04-栈/src/com/mj/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mj/Deque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mj/circle/CircleDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mj/circle/CircleQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mj/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +54,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mj" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -109,5 +104,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="655" y="268" key="#com.intellij.ide.util.MemberChooser" timestamp="1601729005606">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="655" y="268" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1601729005606" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1601734269793">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269793" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1601734269791">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269791" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1601734269790">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269790" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1601734269792">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269792" />
+    <state x="561" y="265" key="run.anything.popup" timestamp="1601728728724">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="561" y="265" key="run.anything.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1601728728724" />
   </component>
 </project>
