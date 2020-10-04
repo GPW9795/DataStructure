@@ -94,6 +94,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -123,6 +124,10 @@
     </state>
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269792" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1601777023936" />
+    <state x="495" y="182" key="new project wizard" timestamp="1601793343156">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="495" y="182" key="new project wizard/0.0.1792.1120@0.0.1792.1120" timestamp="1601793343156" />
     <state x="561" y="265" key="run.anything.popup" timestamp="1601728728724">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
