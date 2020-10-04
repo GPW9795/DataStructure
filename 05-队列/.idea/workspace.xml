@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="527556ba-7dfe-4c38-97e7-53037783a84c" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/../00-Leetcode/src/队列/_225_用队列实现栈.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-Leetcode/src/队列/_225_用队列实现栈.java" afterDir="false" />
-    </list>
+    <list default="true" id="527556ba-7dfe-4c38-97e7-53037783a84c" name="默认的" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,22 +103,26 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="655" y="268" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1601729005606" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1601734269793">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1601777023936">
+      <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269793" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1601734269791">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1601777023936" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1601777023935">
+      <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269791" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1601734269790">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1601777023935" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1601777023935">
+      <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269790" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1601734269792">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1601777023935" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1601777023936">
+      <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1601734269792" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1601777023936" />
     <state x="561" y="265" key="run.anything.popup" timestamp="1601728728724">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
