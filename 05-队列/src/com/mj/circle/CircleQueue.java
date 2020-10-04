@@ -74,4 +74,12 @@ public class CircleQueue<E> {
         index += front;
         return index - (elements.length > index ? 0 : elements.length);
     }
+
+    public void clear(){
+        for (int i = 0; i < size; i++) {
+            elements[index(i)] = null;
+        }
+        size = 0;
+        front = 0;
+    }
 }
