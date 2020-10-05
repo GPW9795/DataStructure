@@ -34,7 +34,16 @@ public class _145_二叉树的后序遍历 {
         Stack<TreeNode> stack = new Stack<>();
 
         while (root!= null||!stack.isEmpty()){
-
+            if (root!=null){
+                stack.push(root);
+                list.addFirst(root.val);
+                root = root.right;
+            }
+            else
+            {
+                root = stack.pop();
+                root = root.left;
+            }
         }
         return list;
     }
