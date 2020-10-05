@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        test2();
+        test1();
     }
 
     static void test1() {
@@ -35,13 +35,20 @@ public class Main {
         }
 
         BinaryTrees.println(bst);
+        System.out.println(bst.contains(5));
+        System.out.println(bst.contains(20));
 
 //        bst.preorderTraversal();
 //        bst.inorderTraversal();
 //        bst.postorderTraversal();
 //        bst.levelOrderTraversal();
 //        System.out.println(bst);
-        System.out.println(bst.height());
+//        bst.remove(7);
+//        BinaryTrees.println(bst);
+//        bst.remove(12);
+//        BinaryTrees.println(bst);
+//        bst.remove(11);
+//        BinaryTrees.println(bst);
     }
 
     static void test2() {
