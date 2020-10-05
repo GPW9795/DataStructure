@@ -30,12 +30,12 @@ public class _145_二叉树的后序遍历 {
      * 迭代实现
      */
     public List<Integer> postorderTraversal1(TreeNode root) {
-        List<Integer> list = new LinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         Stack<TreeNode> stack = new Stack<>();
 
+        while (root!= null||!stack.isEmpty()){
 
-
-
+        }
         return list;
     }
 }
