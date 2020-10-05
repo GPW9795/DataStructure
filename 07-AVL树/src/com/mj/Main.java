@@ -1,7 +1,7 @@
 package com.mj;
 
 import com.mj.printer.BinaryTrees;
-import com.mj.tree.BST;
+import com.mj.tree.AVLTree;
 
 
 public class Main {
@@ -13,13 +13,13 @@ public class Main {
     static void test1() {
         Integer[] data = {7, 4, 2, 1, 3, 5, 9, 8, 11, 10, 12};
 
-        BST<Integer> bst = new BST<>();
+        AVLTree<Integer> avl = new AVLTree<>();
         for (int i = 0; i < data.length; i++) {
-            bst.add(data[i]);
+            avl.add(data[i]);
         }
 
-        BinaryTrees.println(bst);
-        System.out.println(bst.contains(5));
-        System.out.println(bst.contains(20));
+        BinaryTrees.println(avl);
+        System.out.println(avl.contains(5));
+        System.out.println(avl.contains(20));
     }
 }

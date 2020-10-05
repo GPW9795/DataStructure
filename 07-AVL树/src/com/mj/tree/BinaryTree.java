@@ -8,6 +8,7 @@ import java.util.Queue;
 public class BinaryTree<E> implements BinaryTreeInfo {
     protected int size;
     protected Node<E> root;
+    protected int height;
 
 
     protected static class Node<E> {
