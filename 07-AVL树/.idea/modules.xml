@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/06-二叉搜索树2.iml" filepath="$PROJECT_DIR$/06-二叉搜索树2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-AVL树.iml" filepath="$PROJECT_DIR$/07-AVL树.iml" />
     </modules>
   </component>
 </project>
