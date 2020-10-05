@@ -8,7 +8,6 @@ import java.util.Queue;
 public class BinaryTree<E> implements BinaryTreeInfo {
     protected int size;
     protected Node<E> root;
-    protected int height;
 
 
     protected static class Node<E> {
@@ -30,8 +29,19 @@ public class BinaryTree<E> implements BinaryTreeInfo {
         public boolean hasTwoChildren() {
             return left != null && right != null;
         }
+
+        public boolean isLeftChild() {
+            return parent != null && this == parent.left;
+        }
+
+        public boolean isRightChild() {
+            return parent != null && this == parent.right;
+        }
     }
 
+    protected Node<E> createNode(E element, Node<E> parent) {
+        return new Node<>(element, parent);
+    }
 
     public int size() {
         return size;
@@ -329,13 +339,7 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 
     @Override
     public Object string(Object node) {
-        Node<E> myNode = (Node<E>) node;
-        String parentString = "null";
-        if (myNode.parent != null) {
-            parentString = myNode.parent.element.toString();
-        }
-
-        return myNode.element + "_p(" + parentString + ")";
+        return node;
     }
 
     @Override
