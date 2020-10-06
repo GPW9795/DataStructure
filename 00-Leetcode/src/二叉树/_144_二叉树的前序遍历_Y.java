@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
  */
-public class _144_二叉树的前序遍历 {
+public class _144_二叉树的前序遍历_Y {
     /**
      * 递归实现
      */

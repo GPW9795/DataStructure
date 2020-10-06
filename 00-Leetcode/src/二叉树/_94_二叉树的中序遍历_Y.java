@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
  */
-public class _94_二叉树的中序遍历 {
+public class _94_二叉树的中序遍历_Y {
     /**
      * 递归实现
      */

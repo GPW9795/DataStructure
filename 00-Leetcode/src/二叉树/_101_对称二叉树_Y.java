@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * https://leetcode-cn.com/problems/symmetric-tree/
  */
-public class _101_对称二叉树 {
+public class _101_对称二叉树_Y {
     /**
      * 递归实现
      */

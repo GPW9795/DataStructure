@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * https://leetcode-cn.com/problems/invert-binary-tree/
  */
-public class _226_翻转二叉树 {
+public class _226_翻转二叉树_Y {
 
     // 递归, 用前中后序遍历都可以
     public TreeNode invertTree(TreeNode root) {

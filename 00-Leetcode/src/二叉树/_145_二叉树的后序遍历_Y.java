@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * https://leetcode-cn.com/problems/binary-tree-postorder-traversal/
  */
-public class _145_二叉树的后序遍历 {
+public class _145_二叉树的后序遍历_Y {
     /**
      * 递归实现
      */
