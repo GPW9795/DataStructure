@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class _20_有效的括号 {
+/**
+ * https://leetcode-cn.com/problems/valid-parentheses/
+ */
+public class _20_有效的括号_Y {
     private static HashMap<Character, Character> map = new HashMap<>();
 
     static {

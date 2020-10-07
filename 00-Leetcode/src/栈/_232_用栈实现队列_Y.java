@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * https://leetcode-cn.com/problems/implement-queue-using-stacks/
  */
-public class _232_用栈实现队列 {
+public class _232_用栈实现队列_Y {
     class MyQueue {
 
         private Stack<Integer> inStack;

@@ -6,10 +6,10 @@ import java.util.Deque;
 /**
  * https://leetcode-cn.com/problems/implement-stack-using-queues/
  */
-public class _225_用队列实现栈 {
+public class _225_用队列实现栈_Y {
     private Deque<Integer> stack;
     /** Initialize your data structure here. */
-    public _225_用队列实现栈() {
+    public _225_用队列实现栈_Y() {
         stack = new ArrayDeque<>();
     }
 
