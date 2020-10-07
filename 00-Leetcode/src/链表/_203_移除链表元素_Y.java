@@ -3,7 +3,7 @@ package 链表;
 /**
  * https://leetcode-cn.com/problems/remove-linked-list-elements/
  */
-public class _203_移除链表元素 {
+public class _203_移除链表元素_Y {
     // 递归法
     public ListNode removeElements1(ListNode head, int val) {
         if (head == null) {

@@ -3,7 +3,7 @@ package 链表;
 /**
  * https://leetcode-cn.com/problems/linked-list-cycle/
  */
-public class _141_环形链表 {
+public class _141_环形链表_Y {
     // 快慢指针思想
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {

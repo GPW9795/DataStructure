@@ -1,5 +1,8 @@
 package 链表;
 
+/**
+ * https://leetcode-cn.com/problems/merge-two-sorted-lists/
+ */
 public class _21_合并两个有序链表 {
     // 迭代
     public ListNode mergeTwoLists1(ListNode l1, ListNode l2) {
