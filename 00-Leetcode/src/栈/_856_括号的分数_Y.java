@@ -25,13 +25,11 @@ public class _856_括号的分数_Y {
             if (a.equals("(")) {
                 stack.push(a);
             } else {
-                String b = stack.peek();
+                String b = stack.pop();
                 if (b.equals("(")) {
-                    stack.pop();
                     stack.push("1");
                 } else {
                     int tmp = 0;
-                    b = stack.pop();
                     while (!b.equals("(")) {
                         int num = Integer.parseInt(b);
                         tmp += num;
