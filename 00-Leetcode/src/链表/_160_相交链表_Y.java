@@ -38,6 +38,7 @@ public class _160_相交链表_Y {
         if (headA == null || headB == null) return null;
         ListNode pA = headA;
         ListNode pB = headB;
+        // 判断条件不能写pA.next == null因为不相交时永远不会为空
         while (pA != pB) {
             pA = pA == null ? headB : pA.next;
             pB = pB == null ? headA : pB.next;
