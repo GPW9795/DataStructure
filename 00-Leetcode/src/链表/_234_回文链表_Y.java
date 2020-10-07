@@ -17,6 +17,7 @@ public class _234_回文链表_Y {
             head = head.next;
         }
         for (int i = 0; i < list.size(); i++) {
+            // 不能直接"=="因为是Integer类型，只有重新赋值才会自动开箱
             if (!list.get(i).equals(list.get(list.size() - i - 1))) {
                 return false;
             }
