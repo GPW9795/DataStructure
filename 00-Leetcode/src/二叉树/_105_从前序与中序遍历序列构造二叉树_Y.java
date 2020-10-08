@@ -1,11 +1,12 @@
 package 二叉树;
 
 import java.util.HashMap;
+import java.util.Stack;
 
 /**
  * https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
  */
-public class _105_从前序与中序遍历序列构造二叉树 {
+public class _105_从前序与中序遍历序列构造二叉树_Y {
     /**
      * 递归实现
      */
@@ -45,8 +46,41 @@ public class _105_从前序与中序遍历序列构造二叉树 {
      * 迭代实现
      */
     public TreeNode buildTree1(int[] preorder, int[] inorder) {
+        if (preorder.length == 0) {
+            return null;
+        }
+        // 表示当前遍历的下标
+        int pre = 0;
+        int in = 0;
+        // 建栈保存每个遍历的节点
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode root = new TreeNode(preorder[pre]);
+        TreeNode curr = root;
+        stack.push(curr);
+        pre++;
+        while (pre < preorder.length) {
+            // 每次进行出栈，实现倒着遍历
+            if (curr.val == inorder[in]) {
+                while (!stack.isEmpty() && stack.peek().val == inorder[in]) {
+                    curr = stack.pop();
+                    in++;
+                }
+                // 更新右孩子
+                curr.right = new TreeNode(preorder[pre]);
+                // 更新当前curr
+                curr = curr.right;
+                stack.push(curr);
+                pre++;
 
-        return null;
+            } else {
+                // 否则就一直作为左子树
+                curr.left = new TreeNode(preorder[pre]);
+                curr = curr.left;
+                stack.push(curr);
+                pre++;
+            }
+        }
+        return root;
     }
 
 }
