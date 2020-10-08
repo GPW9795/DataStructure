@@ -2,7 +2,7 @@ package com.mj.tree;
 
 import java.util.*;
 
-public class BST<E> extends BinaryTree<E>{
+public class BST<E> extends BinaryTree<E> {
     private Comparator<E> comparator;
 
     public BST() {
@@ -57,15 +57,19 @@ public class BST<E> extends BinaryTree<E>{
 
     /**
      * 添加node之后的调整
+     *
      * @param node 新添加的节点
      */
-    protected void afterAdd(Node<E> node){}
+    protected void afterAdd(Node<E> node) {
+    }
 
     /**
      * 删除node之后的调整
+     *
      * @param node 删除的节点
      */
-    protected void afterRemove(Node<E> node){}
+    protected void afterRemove(Node<E> node, Node<E> replacement) {
+    }
 
     public void remove(E element) {
         remove(node(element));
@@ -95,11 +99,11 @@ public class BST<E> extends BinaryTree<E>{
                 node.parent.right = replacement;
             }
             // 删除节点之后的处理
-            afterRemove(node);
+            afterRemove(node, replacement);
         } else if (node.parent == null) { // node为叶子结点且为根节点
             root = null;
             // 删除节点之后的处理
-            afterRemove(node);
+            afterRemove(node, null);
         } else { // 度为0的叶子结点
             if (node == node.parent.left) {
                 node.parent.left = null;
@@ -107,7 +111,7 @@ public class BST<E> extends BinaryTree<E>{
                 node.parent.right = null;
             }
             // 删除节点之后的处理
-            afterRemove(node);
+            afterRemove(node, replacement);
         }
 
     }
@@ -132,8 +136,6 @@ public class BST<E> extends BinaryTree<E>{
     }
 
 
-
-
     /**
      * 对比
      *
@@ -153,7 +155,6 @@ public class BST<E> extends BinaryTree<E>{
             throw new IllegalArgumentException("element not be null");
         }
     }
-
 
 
 }

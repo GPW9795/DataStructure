@@ -38,11 +38,11 @@ public class BinaryTree<E> implements BinaryTreeInfo {
             return parent != null && this == parent.right;
         }
 
-        public Node<E> sibling(){
-            if (isLeftChild()){
+        public Node<E> sibling() {
+            if (isLeftChild()) {
                 return parent.right;
             }
-            if (isRightChild()){
+            if (isRightChild()) {
                 return parent.left;
             }
             return null;
@@ -270,22 +270,23 @@ public class BinaryTree<E> implements BinaryTreeInfo {
         boolean leaf = false;
         while (!queue.isEmpty()) {
             Node<E> node = queue.poll();
-            if (leaf && !node.isLeaf()) {
+            if (leaf && !node.isLeaf()) return false;
+
+            if (node.left != null) {
+                queue.offer(node.left);
+            } else if (node.right != null) { // 左节点为空且右节点不为空
                 return false;
             }
-
-            if (node.hasTwoChildren()) {
-                queue.offer(node.left);
+            
+            if (node.right != null) {
                 queue.offer(node.right);
-            } else if (node.left == null && node.right != null) {
-                return false;
-            } else {
+            } else { // 右节点为空，左节点是否为空不一定
                 leaf = true;
             }
+
         }
         return true;
     }
-
 
     // 递归
     public int height1() {
