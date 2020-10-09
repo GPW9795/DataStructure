@@ -3,9 +3,19 @@ package com.mj.set;
 import com.mj.tree.BinaryTree;
 import com.mj.tree.RBTree;
 
+import java.util.Comparator;
+
 public class TreeSet<E> implements Set<E> {
 
-    private RBTree<E> tree = new RBTree<>();
+    private RBTree<E> tree;
+
+    public TreeSet(){
+        this(null);
+    }
+
+    public TreeSet(Comparator<E> comparator){
+        tree = new RBTree<>(comparator);
+    }
 
     @Override
     public int size() {
