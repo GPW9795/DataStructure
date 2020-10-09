@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06bb60e2-5c8e-4dc9-8506-9d0c6a9d9f9c" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/map/TreeMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/set/Set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/set/TreeSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/RBTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mj/map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/map/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mj/map/TreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/map/TreeMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +50,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/mj/set" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -109,6 +99,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -118,21 +109,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602233039367" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602233338584">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602235675477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602233338584" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602233338583">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602235675477" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602235675477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602233338583" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602233338583">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602235675477" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602235675477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602233338583" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602233338583">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602235675477" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602235675477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602233338583" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602235675477" />
   </component>
 </project>
