@@ -35,5 +35,7 @@ public class Main {
         }
 
         BinaryTrees.println(avl);
+        avl.remove(8);
+        BinaryTrees.println(avl);
     }
 }

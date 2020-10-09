@@ -144,56 +144,63 @@ public class BinaryTree<E> implements BinaryTreeInfo {
     /**
      * 遍历自定义操作
      */
-    public static interface Visitor<E> {
-        void visit(E element);
+    public static abstract class Visitor<E> {
+        boolean stop;
+
+        abstract boolean visit(E element);
     }
 
     // 前序遍历
     public void preorder(Visitor<E> visitor) {
+        if (visitor == null) return;
         preorder(root, visitor);
         System.out.println();
 
     }
 
     private void preorder(Node<E> node, Visitor<E> visitor) {
-        if (node == null || visitor == null) {
+        if (node == null || visitor.stop) {
             return;
         }
-        visitor.visit(node.element);
+        visitor.stop = visitor.visit(node.element);
         preorder(node.left, visitor);
         preorder(node.right, visitor);
     }
 
     // 中序遍历
     public void inorder(Visitor<E> visitor) {
+        if (visitor == null) return;
         inorder(root, visitor);
         System.out.println();
 
     }
 
     private void inorder(Node<E> node, Visitor<E> visitor) {
-        if (node == null || visitor == null) {
+        if (node == null || visitor.stop) {
             return;
         }
         inorder(node.left, visitor);
-        visitor.visit(node.element);
+        if (visitor.stop) return;
+        visitor.stop = visitor.visit(node.element);
         inorder(node.right, visitor);
     }
 
     // 后序遍历
     public void postorder(Visitor<E> visitor) {
+        if (visitor == null) return;
         postorder(root, visitor);
         System.out.println();
 
     }
 
     private void postorder(Node<E> node, Visitor<E> visitor) {
-        if (node == null || visitor == null) {
+        if (node == null || visitor.stop) {
             return;
         }
         postorder(node.left, visitor);
         postorder(node.right, visitor);
-        visitor.visit(node.element);
+        if (visitor.stop) return;
+        visitor.stop = visitor.visit(node.element);
     }
 
     // 层序遍历
@@ -206,7 +213,7 @@ public class BinaryTree<E> implements BinaryTreeInfo {
 
         while (!queue.isEmpty()) {
             Node<E> node = queue.poll();
-            visitor.visit(node.element);
+            if (visitor.visit(node.element)) return;
             if (node.left != null) {
                 queue.offer(node.left);
             }
@@ -277,7 +284,7 @@ public class BinaryTree<E> implements BinaryTreeInfo {
             } else if (node.right != null) { // 左节点为空且右节点不为空
                 return false;
             }
-            
+
             if (node.right != null) {
                 queue.offer(node.right);
             } else { // 右节点为空，左节点是否为空不一定

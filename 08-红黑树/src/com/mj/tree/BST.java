@@ -68,7 +68,7 @@ public class BST<E> extends BinaryTree<E> {
      *
      * @param node 删除的节点
      */
-    protected void afterRemove(Node<E> node, Node<E> replacement) {
+    protected void afterRemove(Node<E> node) {
     }
 
     public void remove(E element) {
@@ -99,11 +99,11 @@ public class BST<E> extends BinaryTree<E> {
                 node.parent.right = replacement;
             }
             // 删除节点之后的处理
-            afterRemove(node, replacement);
+            afterRemove(replacement);
         } else if (node.parent == null) { // node为叶子结点且为根节点
             root = null;
             // 删除节点之后的处理
-            afterRemove(node, null);
+            afterRemove(node);
         } else { // 度为0的叶子结点
             if (node == node.parent.left) {
                 node.parent.left = null;
@@ -111,7 +111,7 @@ public class BST<E> extends BinaryTree<E> {
                 node.parent.right = null;
             }
             // 删除节点之后的处理
-            afterRemove(node, replacement);
+            afterRemove(node);
         }
 
     }
