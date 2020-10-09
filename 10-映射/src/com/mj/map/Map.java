@@ -5,6 +5,8 @@ public interface Map<K, V> {
 
     boolean isEmpty();
 
+    void clear();
+
     V put(K key, V value);
 
     V get(K key);
