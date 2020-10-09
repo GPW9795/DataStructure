@@ -1,4 +1,4 @@
-package com.mj;
+package com.mj.set;
 
 public interface Set<E> {
     int size();
