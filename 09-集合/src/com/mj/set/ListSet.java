@@ -1,10 +1,11 @@
 package com.mj.set;
 
 import com.mj.list.LinkedList;
+import com.mj.list.List;
 
 public class ListSet<E> extends LinkedList<E> implements Set<E> {
 
-    public LinkedList<E> list = new LinkedList<>();
+    private List<E> list = new LinkedList<>();
 
     @Override
     public int size() {
