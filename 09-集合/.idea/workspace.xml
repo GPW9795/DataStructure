@@ -20,17 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f3e73d1-910f-4a66-824e-83a48af7749d" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mj/Times.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/file/FileInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/file/Files.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/RBTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00-leetcode/src/集合/_349_两个数组的交集.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-leetcode/src/集合/_349_两个数组的交集.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mj/set/ListSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/set/ListSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mj/set/TreeSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mj/set/TreeSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
