@@ -1,9 +1,5 @@
 package com.mj.map;
 
-
-import com.mj.tree.BinaryTree;
-import com.mj.tree.RBTree;
-
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -47,9 +43,8 @@ public class TreeMap<K, V> implements Map<K, V> {
         // 添加第一个节点
         if (root == null) {
             root = new Node<>(key, value, null);
+            black(root);
             size++;
-            // 新添加节点之后的处理
-            afterPut(root);
             return null;
         }
         // 添加的不是第一个节点
@@ -167,8 +162,6 @@ public class TreeMap<K, V> implements Map<K, V> {
             afterRemove(replacement);
         } else if (node.parent == null) { // node为叶子结点且为根节点
             root = null;
-            // 删除节点之后的处理
-            afterRemove(node);
         } else { // 度为0的叶子结点
             if (node == node.parent.left) {
                 node.parent.left = null;
@@ -189,7 +182,6 @@ public class TreeMap<K, V> implements Map<K, V> {
         }
 
         Node<K, V> parent = node.parent;
-        // 删除的为根节点
         if (parent == null) return;
 
         // 删除的为黑色叶子节点
