@@ -1,15 +1,36 @@
 package com.mj;
 
+import com.mj.map.HashMap;
+import com.mj.map.Map;
+
 public class Main {
 
     public static void main(String[] args) {
-        Person p1 = new Person(10,1.67f, "jack");
-        Person p2 = new Person(10,1.67f, "jack");
-        System.out.println(p1.hashCode());
-        System.out.println(p2.hashCode());
+        Person p1 = new Person(10, 1.67f, "jack");
+        Person p2 = new Person(10, 1.67f, "jack");
+
+        Map<Object, Integer> map = new HashMap<>();
+        map.put(p1, 1);
+        map.put(p2, 2);
+        map.put("jack", 3);
+        map.put("rose", 4);
+//        map.put("jack", 5);
+        map.put(null, 6);
+
+//        System.out.println(map.remove("jack"));
+//        System.out.println(map.get("rose"));
+//        System.out.println(map.get("jack"));
+//        System.out.println(map.get(null));
+//        System.out.println(map.get(p1));
+        map.traversal(new Map.Visitor<Object, Integer>() {
+            public boolean visit(Object key, Integer value) {
+                System.out.println(key + "_" + value);
+                return false;
+            }
+        });
     }
 
-    static void test1(){
+    static void test1() {
         String string = "jack";
         System.out.println(string.hashCode());
         int len = string.length();
@@ -22,7 +43,7 @@ public class Main {
         System.out.println(hashCode);
     }
 
-    static void test2(){
+    static void test2() {
         Integer a = 100;
         Float b = 10.6f;
         Long c = 156l;
