@@ -324,7 +324,7 @@ public class HashMap<K, V> implements Map<K, V> {
         return root != null ? node(root, key) : null;
     }
 
-    private Node<K, V> node(Node<K, V> node, K k1) {
+    protected Node<K, V> node(Node<K, V> node, K k1) {
 
         int h1 = hash(k1);
         Node<K, V> result = null;
@@ -553,7 +553,7 @@ public class HashMap<K, V> implements Map<K, V> {
         grand.parent = parent;
     }
 
-    private static class Node<K, V> {
+    protected static class Node<K, V> {
         int hash;
         K key;
         V value;
