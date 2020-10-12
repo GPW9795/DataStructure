@@ -1,6 +1,7 @@
 package com.mj;
 
 import com.mj.map.HashMap;
+import com.mj.map.LinkedHashMap;
 import com.mj.map.Map;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
         Person p1 = new Person(10, 1.67f, "jack");
         Person p2 = new Person(10, 1.67f, "jack");
 
-        Map<Object, Integer> map = new HashMap<>();
+        Map<Object, Integer> map = new LinkedHashMap<>();
         map.put(p1, 1);
         map.put(p2, 2);
         map.put("jack", 3);
