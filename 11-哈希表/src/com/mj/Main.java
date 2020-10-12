@@ -1,8 +1,9 @@
 package com.mj;
 
-import com.mj.map.HashMap;
 import com.mj.map.LinkedHashMap;
 import com.mj.map.Map;
+
+import java.util.HashMap;
 
 public class Main {
 
