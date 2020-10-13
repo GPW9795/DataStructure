@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d16b308-4ebd-4ba4-98ab-b0a7872a760c" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/../12-堆/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12-堆/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-堆/src/com/mj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12-堆/src/com/mj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12-堆/src/com/mj/heap/BinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12-堆/src/com/mj/heap/BinaryHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/mj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12-堆" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -88,5 +86,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602553606627" />
+    <state x="551" y="130" key="new project wizard" timestamp="1602555364217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="551" y="130" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1602555364217" />
   </component>
 </project>
