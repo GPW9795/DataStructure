@@ -20,11 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a654ffaf-bf7c-49b5-b010-1ba85c61f213" name="默认的" comment="" />
-=======
-    <list default="true" id="a654ffaf-bf7c-49b5-b010-1ba85c61f213" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
->>>>>>> b01c21573f1334279ac79cb1c4e2edca118924e2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
