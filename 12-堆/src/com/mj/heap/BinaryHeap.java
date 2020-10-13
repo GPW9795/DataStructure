@@ -12,13 +12,32 @@ public class BinaryHeap<E> extends AbstractHeap<E> implements Heap<E>, BinaryTre
     private E[] elements;
     static final int DEFAULT_CAPACITY = 10;
 
-    public BinaryHeap(Comparator<E> comparator) {
+    public BinaryHeap(E[] elements, Comparator<E> comparator) {
         super(comparator);
-        this.elements = (E[]) new Object[DEFAULT_CAPACITY];
+
+        if (elements == null || elements.length == 0) {
+            this.elements = (E[]) new Object[DEFAULT_CAPACITY];
+        } else {
+            size = elements.length;
+            int capacity = Math.max(elements.length, DEFAULT_CAPACITY);
+            this.elements = (E[]) new Object[capacity];
+            for (int i = 0; i < elements.length; i++) {
+                this.elements[i] = elements[i];
+            }
+            heapify();
+        }
+    }
+
+    public BinaryHeap(E[] elements) {
+        this(elements, null);
+    }
+
+    public BinaryHeap(Comparator<E> comparator) {
+        this(null, comparator);
     }
 
     public BinaryHeap() {
-        this(null);
+        this(null, null);
     }
 
 
@@ -69,6 +88,16 @@ public class BinaryHeap<E> extends AbstractHeap<E> implements Heap<E>, BinaryTre
             siftDown(0);
         }
         return root;
+    }
+
+    /**
+     * 批量建堆
+     */
+    private void heapify() {
+        // 自下而上的下滤
+        for (int i = (size >> 1) - 1; i >= 0; i--) {
+            siftDown(i);
+        }
     }
 
     /**
