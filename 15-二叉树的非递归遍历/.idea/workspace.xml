@@ -19,24 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="567a14ec-2be0-4197-862e-3b3aa73a722c" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-二叉树的非递归遍历.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/Asserts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/printer/BinaryTreeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/printer/BinaryTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/printer/InorderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/printer/LevelOrderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/printer/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/printer/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mj/tree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../14-Trie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../14-Trie/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="567a14ec-2be0-4197-862e-3b3aa73a722c" name="默认的" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
